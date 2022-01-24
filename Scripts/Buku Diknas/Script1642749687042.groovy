@@ -17,20 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\Users\\Maulana Yusuf\\kuliah\\MAGANG\\app.apk', true)
+WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Login/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('Object Repository/Buku Diknas/android.widget.ImageView - Buku Diknas'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login/android.view.ViewGroup (1)'), 0)
+Mobile.tap(findTestObject('Object Repository/Buku Diknas/android.widget.TextView - E-Book'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Login/android.widget.TextView - Masuk'), 0)
+Mobile.tap(findTestObject('Object Repository/Buku Diknas/android.widget.TextView - Pendidikan Agama Buddha'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Login/android.widget.EditText - examplemail.com'), 'komiku@yopmail.com', 
-    0)
+WebUI.delay(90)
 
-Mobile.setText(findTestObject('Object Repository/Login/android.widget.EditText'), 'yusuf123', 0)
-
-Mobile.tap(findTestObject('Object Repository/Login/android.widget.TextView - Lanjutkan'), 0)
-
-Mobile.getText(findTestObject('Object Repository/Login/android.widget.TextView - Selamat pagi, Sobat Pijar'), 0)
+Mobile.closeApplication()
 
