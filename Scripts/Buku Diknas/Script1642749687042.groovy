@@ -27,5 +27,3 @@ Mobile.tap(findTestObject('Object Repository/Buku Diknas/android.widget.TextView
 
 WebUI.delay(90)
 
-Mobile.closeApplication()
-

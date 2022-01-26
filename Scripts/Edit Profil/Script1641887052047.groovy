@@ -19,13 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Ubah Password/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('Edit Profil/android.widget.TextView - Profil'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Ubah Password/android.widget.TextView - Edit Profil'), 0)
+Mobile.tap(findTestObject('Edit Profil/android.widget.TextView - Edit Profil'), 0)
 
-Mobile.setText(findTestObject('Ubah Password/android.widget.EditText - Nama panggilan'), 'komik', 0)
+Mobile.setText(findTestObject('Edit Profil/android.widget.EditText - Nama panggilan'), 'Halo', 0)
 
 Mobile.scrollToText('Tanggal Lahir', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Ubah Password/android.widget.TextView - Simpan'), 0)
+Mobile.tap(findTestObject('Edit Profil/android.widget.TextView - Simpan'), 15)
+
+Mobile.tap(findTestObject('Edit Profil/android.view.ViewGroup - Home'), 0)
 

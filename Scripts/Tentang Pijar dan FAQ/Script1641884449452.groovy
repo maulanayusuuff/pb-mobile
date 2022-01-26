@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Special Section/android.view.ViewGroup - Profile'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Special Section/android.view.ViewGroup - Tentang Kami'), 0)
+Mobile.tap(findTestObject('Special Section/android.widget.TextView - Tentang Pijar Belajar'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Special Section/android.view.ViewGroup - Back'), 0)
 
